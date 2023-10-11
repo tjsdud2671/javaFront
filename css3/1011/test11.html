@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test11.html</title>
+    <style>
+        .aa1,.aa2,.aa3{
+            background-color: rgb(255, 204, 195);
+            /* width: 300px; */
+            display: inline;
+        }
+        .aa4{
+            background-color: thistle;
+            display:none
+            /* visibility: hidden; */
+        }
+        .aa5,.aa6,.aa7{
+            background-color: aliceblue;
+            border: 1px solid rgb(140, 167, 42);
+            width: 500px;
+        }
+        .bb1{
+            /* display: block; */
+            /* display: inline-block; */
+            border: 1px solid rgb(52, 46, 139);
+            width: 100px;
+            padding: 10px;
+        }
+        .bb1:hover{
+            background-color: aquamarine;
+        }
+        .bb2{
+            /* display: block; */
+            display: inline-block;
+            border: 1px solid rgb(233, 13, 203);
+            width: 100px;
+            padding: 10px;
+        }
+        .bb2:hover{
+            background-color: rgb(52, 107, 89);
+    </style>
+</head>
+<body>
+    <h2>Display 속성</h2>
+    <p>각각의 요소들을 어떻게 보여줄지를 결정한다.</p>
+    <p>
+        속성처리 : visiblity(기본값:보이기) / hidden(감추기) / inherit(부모요소의 값을 상속받아서 사용)
+    </p>
+    <p>
+        <b>Display 속성</b>
+        none: <span>화면</span>에서 완전히 사라지게 합니다.<br/>
+    </p>
+    <hr/>
+    <h3>사용예제</h3>
+    <div class="aa1">1.안녕</div>
+    <div class="aa2">2.안녕</div>
+    <div class="aa3">3.안녕</div>
+    <div class="aa4">4.안녕</div>
+    <hr/>
+    <h2>Block/ Inline/ Inline-Block속성</h2>
+    <div class="aa5">
+        5.<font color="red" class="bb1">안녕</font>
+    </div>
+    <div class="aa6">
+        6.<span class="bb2"><font color="blue">안녕</font></span>
+    </div>
+    <div class="aa7">
+        7.안녕
+    </div>
+</body>
+</html>
