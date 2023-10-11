@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test8.html</title>
+    <style>
+        table{
+            width: 400px;
+            /* height: 300px; */
+            border-collapse: collapse; /*선 사이 간격 없애기*/
+        }
+        th,td{
+            border: 1px solid gray;
+            text-align: center; /*전체 내용 가운데로*/
+            padding: 20px;
+            color: rgb(14, 47, 77);
+        }
+        thead{
+            background-color: rgb(195, 134, 207);
+
+        }
+        tfoot{
+            background-color: rgb(214, 241, 158);
+        }
+        tbody{
+            background-color: thistle;
+        }
+        .dd{
+            background-color: rgb(165, 194, 255);
+        }
+
+        /*id와 class가 우선이기 때문에 태그 덮어쓰지 않음*/
+    </style>
+</head>
+<body>
+    <h2>표 연습</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>1</th>
+            <th class="dd">2</th>
+            <th>3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>4</td>
+            <td class="dd">5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="dd">8</td>
+            <td>9</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td class="dd">12</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

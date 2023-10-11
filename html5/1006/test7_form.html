@@ -1,0 +1,106 @@
+
+<html>
+<head>
+  <title>test7_form.html(폼태그연습)</title>
+</head>
+<body>
+  <h2>폼태그 연습</h2>
+  <hr/>
+  <h2>회 원 가 입</h2>
+  <form name="myform" method="get" action="#">
+    <table border="1" cellpadding="10px" cellspacing="0px">
+      <caption><h2><p align="center">회원가입</p></h2></caption>
+      <tr>
+        <th bgcolor="lightgray"><label for="irum">성명</label></th>
+        <td><input type="text" name="irum" id="irum" placeholder="이름을 입력하세요" autofocus required /></td>
+      </tr> <!-- 텍스트필드 -->
+      <tr>
+        <th bgcolor="lightgray" ><label for="age">나이</label></th>
+        <td><input type="number" name="age" id="age" value="10" min="10" max="99" /></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">닉네임</td>
+        <td><input type="text" name="nickName" value="홍장군" size="5" required/></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">비밀번호(8자이내로입력)</td>
+        <td><input type="password" name="pwd" maxlength="8"required /></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">검색어</td>
+        <td><input type="search" name="search" placeholder="검색어를 입력하세요" /></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">이메일</td>
+        <td><input type="email" name="email" placeholder="메일주소를 입력하세요" required/></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">성별</td>
+        <td>
+          <input type="radio" name="gender" value="남자" />남자 &nbsp&nbsp
+          <input type="radio" name="gender" value="여자" checked />여자
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">소지하고 있는 카드는</td>
+        <td>
+          <input type="checkbox" name="card" value="LG카드" />LG카드
+          <input type="checkbox" name="card" value="삼성카드" />삼성카드
+          <input type="checkbox" name="card" value="농협카드" />농협카드
+          <input type="checkbox" name="card" value="신한카드" />신한카드
+          <input type="checkbox" name="card" value="BC카드" />BC카드
+          <input type="checkbox" name="card" value="비자카드" />비자카드
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">직업</td>
+        <td>
+          <select name="job">
+            <option value="">직업을 선택</option>
+            <option value="s" selected>학생</option>
+            <option value="o">회사원</option>
+            <option value="g">공무원</option>
+            <option value="a">의사</option>
+            <option value="z">기타</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">즐겨먹는음식</td>
+        <td>
+          <select name="foot" size="5" multiple>
+            <option>음료수</option>
+            <option>짜장면</option>
+            <option>찐빵</option>
+            <option>떡볶이</option>
+            <option>만두</option>
+            <option>바나나</option>
+            <option>과자</option>
+            <option>아이스크림</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">자기소개</td>
+        <td><textarea rows="5" cols="50" name="content"></textarea></td>
+      </tr>
+      <tr>
+        <td bgcolor="lightgray" align="center">첨부파일</td>
+        <td><input type="file" name="fname" /></td>
+      </tr>
+        <td colspan="2" align="center" bgcolor="pink">
+        <!--
+          <button type="submit">전송하기</button>
+          <button type="reset">다시입력</button>
+          <button type="button">돌아가기</button>
+          -->
+          <input type="submit" value="전송하기"/> &nbsp
+          <input type="reset" value="다시입력"/> &nbsp
+          <input type="button" value="돌아가기"/> &nbsp
+        </td>
+      </tr>
+    </table>
+     <input type="hidden" name="idx" value="1234"/>
+  </form>
+</body>
+</html>
