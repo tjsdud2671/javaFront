@@ -1,0 +1,47 @@
+/*test6.css*/
+body{
+    margin: 0px;
+    font-size: 0.8em;
+}
+.container{
+    background-color: beige;
+    height: 100vh; /* vh-수직 높이를 100%로 쓰겠다.(브라우저의 높이)*/
+    display: flex; /*블럭 형식이 인라인 형식으로 바뀜*/
+    flex-direction: row; /*기본(행 기준)*/ 
+
+
+
+}
+.item{
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+/* .item:nth-child(1){
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+} */
+
+.item1{
+    background-color: thistle; 
+    order: 1;
+    /* flex-grow: 3; */
+    flex-shrink: 3; /*기본크기보다 줄어들 때 변화*/
+}
+.item2{
+    background-color: rgb(122, 96, 122); 
+    order: 2;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}
+.item3{background-color: rgb(104, 49, 104);order: 3;}
+.item4{background-color: thistle;order: 4;}
+.item5{background-color: rgb(180, 171, 218);order: 5;}
+.item6{background-color: rgb(168, 102, 168);order: 6;}
+.item7{background-color: rgb(143, 110, 143);order: 7;}
+.item8{background-color: rgb(142, 231, 187);order: 8;}
+.item9{background-color: rgb(113, 170, 111);order: 9;}
+.item10{background-color: rgb(85, 105, 102);order: 10;}
