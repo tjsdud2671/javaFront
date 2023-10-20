@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,17 +8,31 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
   <script>
     'use strict';
-    window.onload = function() {
-      myform.su.value =5000;
 
+    window.onload = function() {
+
+      myform.su.value = 5000;
+      
     }
 
+    function fCheck() {
+      let num = myform.su.value;
+      console.log("num: ", num);
+      num = numberWithCommas(num);
+      console.log("num: ", num);
+      myform.su.value = num;
+    }
+
+    // 콤마 변환함수
+    function numberWithCommas(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    }
   </script>
 </head>
 <body>
   <h2>jQuery 연습</h2>
   <form name="myform">
-    수 : <input type="number" value="10" name="su" id="su" autofocus/>
+    수 : <input type="text" value="10" name="su" id="su" autofocus />
     <input type="button" value="계산" onclick="fCheck()" />
   </form>
 </body>
